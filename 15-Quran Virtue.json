@@ -1,10 +1,10 @@
 {
   "version": "1.0",
-  "screenKey": "quranicDua",
-  "title": "الأدعية القرآنية",
+  "screenKey": "quranVirtue",
+  "title": "فضل القرآن",
   "items": [
     {
-      "title": "دعاء قرآني",
+      "title": "فضل القرآن",
       "text": "",
       "repeat": 0,
       "source": "",
@@ -12,4 +12,3 @@
     }
   ]
 }
-

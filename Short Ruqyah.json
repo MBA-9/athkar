@@ -1,10 +1,10 @@
 {
   "version": "1.0",
-  "screenKey": "quranicDua",
-  "title": "الأدعية القرآنية",
+  "screenKey": "ruqyahShort",
+  "title": "الرقية الشرعية المختصرة",
   "items": [
     {
-      "title": "دعاء قرآني",
+      "title": "رقية شرعية",
       "text": "",
       "repeat": 0,
       "source": "",

@@ -2,5 +2,14 @@
   "version": "1.0",
   "screenKey": "prophets",
   "title": "أدعية الأنبياء",
-  "items": []
+  "items": [
+    {
+      "title": "دعاء من أدعية الأنبياء",
+      "text": "",
+      "repeat": 0,
+      "source": "",
+      "audioFile": ""
+    }
+  ]
 }
+
