@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="description" content="Privacy Policy — Transparent, modern, bilingual." />
+  <title>Privacy Policy</title>
+
+  <style>
+    :root{
+      --bg: #070a12;
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.10);
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 24px 80px rgba(0,0,0,.45);
+      --radius: 18px;
+      --accent: #7c3aed;
+      --accent2: #22c55e;
+      --danger: #ef4444;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --max: 1040px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f6f7fb;
+        --text: rgba(10,12,16,.92);
+        --muted: rgba(10,12,16,.62);
+        --card: rgba(10,12,16,.04);
+        --card2: rgba(10,12,16,.06);
+        --border: rgba(10,12,16,.10);
+        --shadow: 0 18px 60px rgba(10,12,16,.14);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display", "SF Pro Text", Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(1200px 800px at 10% 8%, rgba(124,58,237,.28), transparent 60%),
+        radial-gradient(900px 650px at 90% 18%, rgba(34,197,94,.18), transparent 55%),
+        radial-gradient(900px 600px at 40% 90%, rgba(245,158,11,.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a{ color: inherit; }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 44px;
+    }
+
+    /* Header */
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 240px;
+    }
+    .logo{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(34,197,94,.78));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      flex: 0 0 auto;
+    }
+    .brand h1{
+      margin:0;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+    .brand p{
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .controls{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .toggle{
+      display:inline-flex;
+      align-items:center;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow:hidden;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .toggle button{
+      cursor:pointer;
+      border:0;
+      padding: 10px 12px;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .2px;
+    }
+    .toggle button.active{
+      color: white;
+      background: linear-gradient(135deg, rgba(124,58,237,.92), rgba(124,58,237,.55));
+    }
+    @media (prefers-color-scheme: light){
+      .toggle button.active{ color: #fff; }
+    }
+
+    /* Layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+      margin-top: 10px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .card-h{
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--card2), transparent);
+    }
+    .title{
+      margin:0;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: .2px;
+    }
+    .sub{
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .content{ padding: 18px; }
+
+    .section{
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .section h3{
+      margin:0;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .2px;
+    }
+
+    .list{
+      margin: 12px 0 0;
+      padding: 0;
+      display:flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .row{
+      display:flex;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.02);
+    }
+    @media (prefers-color-scheme: light){
+      .row{ background: rgba(10,12,16,.02); }
+    }
+    .ic{
+      width: 36px;
+      height: 36px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, rgba(124,58,237,.18), rgba(34,197,94,.10));
+      font-size: 16px;
+    }
+    .row h4{
+      margin:0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .row p{
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.02);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .dot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: var(--ok);
+      box-shadow: 0 0 0 4px rgba(34,197,94,.12);
+    }
+    .dot.warn{ background: var(--warn); box-shadow: 0 0 0 4px rgba(245,158,11,.12); }
+    .dot.danger{ background: var(--danger); box-shadow: 0 0 0 4px rgba(239,68,68,.12); }
+
+    /* Sidebar */
+    .side{
+      display:flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .cta{
+      padding: 18px;
+    }
+    .cta h3{
+      margin:0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .cta p{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .btn{
+      margin-top: 12px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 100%;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(124,58,237,.92), rgba(124,58,237,.55));
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+      box-shadow: 0 14px 34px rgba(124,58,237,.22);
+    }
+    .btn.secondary{
+      background: transparent;
+      color: var(--text);
+      box-shadow: none;
+    }
+
+    .mini{
+      padding: 18px;
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .kv{
+      display:flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.02);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      display:flex;
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .link{
+      color: var(--muted);
+      text-decoration:none;
+      border-bottom: 1px dashed transparent;
+    }
+    .link:hover{ border-bottom-color: var(--muted); }
+
+    /* Language handling */
+    [data-lang] { display:none; }
+    .show { display:block; }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Your App Name</h1>
+          <p id="tagline">Privacy & Data Transparency</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="pill" aria-label="Last updated">
+          <span id="luLabel">Last updated</span>
+          <strong style="color:var(--text)" id="lastUpdated">29 Dec 2025</strong>
+        </div>
+
+        <div class="toggle" role="tablist" aria-label="Language">
+          <button id="btnEn" class="active" type="button" aria-selected="true">English</button>
+          <button id="btnAr" type="button" aria-selected="false">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- MAIN -->
+      <article class="card">
+        <div class="card-h">
+          <h2 class="title" data-lang="en">Privacy Policy</h2>
+          <h2 class="title" data-lang="ar">سياسة الخصوصية</h2>
+
+          <p class="sub" data-lang="en">
+            We value transparency. This document explains how the app handles information.
+          </p>
+          <p class="sub" data-lang="ar">
+            نؤمن بالوضوح والشفافية. هذه الصفحة توضح كيف يتعامل التطبيق مع المعلومات.
+          </p>
+
+          <div class="badges">
+            <div class="badge"><span class="dot"></span><span data-lang="en">No data collection</span><span data-lang="ar">لا نجمع بيانات</span></div>
+            <div class="badge"><span class="dot warn"></span><span data-lang="en">No tracking</span><span data-lang="ar">لا تتبع</span></div>
+            <div class="badge"><span class="dot danger"></span><span data-lang="en">No third-party sharing</span><span data-lang="ar">لا مشاركة مع جهات خارجية</span></div>
+          </div>
+        </div>
+
+        <div class="content">
+          <!-- Core principles -->
+          <div class="list">
+            <div class="row">
+              <div class="ic" aria-hidden="true">🔒</div>
+              <div>
+                <h4 data-lang="en">Personal Data</h4>
+                <h4 data-lang="ar">البيانات الشخصية</h4>
+                <p data-lang="en">The app does not collect, store, or sell personal data.</p>
+                <p data-lang="ar">لا يقوم التطبيق بجمع أو تخزين أو بيع أي بيانات شخصية.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="ic" aria-hidden="true">📱</div>
+              <div>
+                <h4 data-lang="en">Local Processing</h4>
+                <h4 data-lang="ar">معالجة محلية</h4>
+                <p data-lang="en">Settings and preferences are stored locally on the device.</p>
+                <p data-lang="ar">يتم حفظ الإعدادات والتفضيلات محليًا على جهاز المستخدم.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="ic" aria-hidden="true">🧭</div>
+              <div>
+                <h4 data-lang="en">Analytics & Tracking</h4>
+                <h4 data-lang="ar">التحليلات والتتبع</h4>
+                <p data-lang="en">No analytics, tracking technologies, or advertising identifiers are used.</p>
+                <p data-lang="ar">لا نستخدم تحليلات، ولا تقنيات تتبع، ولا معرفات إعلانية.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- What we don't do -->
+          <div class="section">
+            <h3 data-lang="en">What we don’t do</h3>
+            <h3 data-lang="ar">ما لا نقوم به</h3>
+
+            <div class="list">
+              <div class="row">
+                <div class="ic" aria-hidden="true">🚫</div>
+                <div>
+                  <h4 data-lang="en">No collection of sensitive information</h4>
+                  <h4 data-lang="ar">لا نجمع بيانات حساسة</h4>
+                  <p data-lang="en">
+                    We do not request or process sensitive categories such as precise location, contacts, photos,
+                    biometrics, health data, financial data, or government identifiers.
+                  </p>
+                  <p data-lang="ar">
+                    لا نطلب ولا نعالج بيانات حساسة مثل الموقع الدقيق، جهات الاتصال، الصور، القياسات الحيوية،
+                    البيانات الصحية أو المالية، أو أي معرفات حكومية.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="ic" aria-hidden="true">🛰️</div>
+                <div>
+                  <h4 data-lang="en">No third-party SDKs for tracking</h4>
+                  <h4 data-lang="ar">لا نستخدم SDK للتتبع</h4>
+                  <p data-lang="en">
+                    We do not integrate third-party tracking SDKs, ad networks, or cross-app profiling tools.
+                  </p>
+                  <p data-lang="ar">
+                    لا ندمج أي أدوات تتبع من جهات خارجية، ولا شبكات إعلانات، ولا أدوات لبناء ملفات تعريف عبر التطبيقات.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="ic" aria-hidden="true">🔁</div>
+                <div>
+                  <h4 data-lang="en">No selling or sharing data</h4>
+                  <h4 data-lang="ar">لا نبيع ولا نشارك البيانات</h4>
+                  <p data-lang="en">
+                    We do not sell, rent, or share user data with any third party. Since we do not collect personal data,
+                    there is nothing to sell or share.
+                  </p>
+                  <p data-lang="ar">
+                    لا نبيع ولا نؤجر ولا نشارك بيانات المستخدم مع أي جهة. وبما أننا لا نجمع بيانات شخصية أساسًا،
+                    فلا يوجد ما يمكن بيعه أو مشاركته.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Legal clarity -->
+          <div class="section">
+            <h3 data-lang="en">Legal clarity</h3>
+            <h3 data-lang="ar">توضيح قانوني</h3>
+
+            <p class="sub show" data-lang="en" style="margin-top:10px">
+              This policy is provided for transparency and is not intended to create contractual obligations beyond
+              applicable law. If the app’s functionality changes in a way that affects data handling, we will update this
+              page and revise the “Last updated” date.
+            </p>
+
+            <p class="sub" data-lang="ar" style="margin-top:10px">
+              تم توفير هذه السياسة للشفافية، ولا تهدف إلى إنشاء التزامات تعاقدية تتجاوز ما يفرضه القانون.
+              إذا تغيرت وظائف التطبيق بشكل يؤثر على التعامل مع المعلومات، فسيتم تحديث هذه الصفحة وتعديل تاريخ "آخر تحديث".
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- SIDE -->
+      <aside class="side">
+        <div class="card">
+          <div class="cta">
+            <h3 data-lang="en">Contact</h3>
+            <h3 data-lang="ar">تواصل معنا</h3>
+
+            <p data-lang="en">Questions about this policy? Email us and we will respond.</p>
+            <p data-lang="ar">عندك سؤال بخصوص الخصوصية؟ راسلنا على البريد وسنرد عليك.</p>
+
+            <a class="btn" href="mailto:G.NQ@outlook.com?subject=Privacy%20Policy%20Inquiry">
+              <span data-lang="en">Email Support</span>
+              <span data-lang="ar">مراسلة الدعم</span>
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="btn secondary" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+              <span data-lang="en">Back to top</span>
+              <span data-lang="ar">الرجوع للأعلى</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="mini">
+            <div class="kv">
+              <span data-lang="en">Data collected</span><span data-lang="ar">البيانات التي نجمعها</span>
+              <strong style="color:var(--text)" data-lang="en">None</strong>
+              <strong style="color:var(--text)" data-lang="ar">لا يوجد</strong>
+            </div>
+            <div class="kv">
+              <span data-lang="en">Tracking</span><span data-lang="ar">التتبع</span>
+              <strong style="color:var(--text)" data-lang="en">Disabled</strong>
+              <strong style="color:var(--text)" data-lang="ar">غير مفعّل</strong>
+            </div>
+            <div class="kv">
+              <span data-lang="en">Third-party sharing</span><span data-lang="ar">مشاركة مع جهات خارجية</span>
+              <strong style="color:var(--text)" data-lang="en">None</strong>
+              <strong style="color:var(--text)" data-lang="ar">لا يوجد</strong>
+            </div>
+            <div class="kv">
+              <span data-lang="en">Support email</span><span data-lang="ar">بريد الدعم</span>
+              <strong style="color:var(--text)">G.NQ@outlook.com</strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <span data-lang="en">© <span id="y"></span> Your Name. All rights reserved.</span>
+      <span data-lang="ar">© <span id="y2"></span> اسمك. جميع الحقوق محفوظة.</span>
+
+      <span>
+        <a class="link" href="mailto:G.NQ@outlook.com">G.NQ@outlook.com</a>
+      </span>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    const year = new Date().getFullYear();
+    document.getElementById("y").textContent = year;
+    document.getElementById("y2").textContent = year;
+
+    // Language toggle (persisted)
+    const btnEn = document.getElementById("btnEn");
+    const btnAr = document.getElementById("btnAr");
+    const nodes = document.querySelectorAll("[data-lang]");
+    const tagline = document.getElementById("tagline");
+    const luLabel = document.getElementById("luLabel");
+
+    function applyLang(lang){
+      // Show/hide by lang
+      nodes.forEach(el => el.classList.remove("show"));
+      document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => el.classList.add("show"));
+
+      // Direction + misc labels
+      document.documentElement.lang = (lang === "ar") ? "ar" : "en";
+      document.documentElement.dir  = (lang === "ar") ? "rtl" : "ltr";
+      tagline.textContent = (lang === "ar") ? "الخصوصية وشفافية البيانات" : "Privacy & Data Transparency";
+      luLabel.textContent = (lang === "ar") ? "آخر تحديث" : "Last updated";
+
+      // Buttons
+      const isAr = lang === "ar";
+      btnEn.classList.toggle("active", !isAr);
+      btnAr.classList.toggle("active", isAr);
+      btnEn.setAttribute("aria-selected", String(!isAr));
+      btnAr.setAttribute("aria-selected", String(isAr));
+
+      // Persist
+      localStorage.setItem("siteLang", lang);
+    }
+
+    btnEn.addEventListener("click", () => applyLang("en"));
+    btnAr.addEventListener("click", () => applyLang("ar"));
+
+    // Auto: prefer saved, else browser language
+    const saved = localStorage.getItem("siteLang");
+    const browserPref = (navigator.language || "").toLowerCase().startsWith("ar") ? "ar" : "en";
+    applyLang(saved || browserPref);
+  </script>
+</body>
+</html>
