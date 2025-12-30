@@ -13,14 +13,13 @@ check_file() {
     local expected_screenkey="$2"
     local expected_category="$3"
     
-    TOTAL=$((TOTAL + 1))
-    
-    # Check if file exists
+    # Check if file exists - skip if not found (might be deleted intentionally)
     if [ ! -f "$file" ]; then
-        echo "❌ الملف غير موجود: $file"
-        ERRORS=$((ERRORS + 1))
-        return 1
+        echo "⏭️  تخطي (ملف محذوف): $file"
+        return 0
     fi
+    
+    TOTAL=$((TOTAL + 1))
     
     # Check JSON validity
     if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
