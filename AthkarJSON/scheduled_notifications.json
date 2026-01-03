@@ -1,0 +1,31 @@
+{
+  "notifications": [
+    {
+      "id": "thursday_maghrib",
+      "title": "تذكير بالصلاة على النبي",
+      "body": "من مغرب يوم الخميس إلى مغرب الجمعة كل ثانية فيها خزائن من الحسنات، فليُكثر من الصلاة على النبي ﷺ",
+      "type": "weekly",
+      "hour": 19,
+      "minute": 0,
+      "weekday": 5
+    },
+    {
+      "id": "friday_kahf",
+      "title": "تذكير بقراءة سورة الكهف",
+      "body": "تذكير بقراءة سورة الكهف",
+      "type": "weekly",
+      "hour": 10,
+      "minute": 0,
+      "weekday": 6
+    },
+    {
+      "id": "daily_istighfar",
+      "title": "تذكير بالاستغفار",
+      "body": "تذكير بالاستغفار",
+      "type": "daily",
+      "hour": 16,
+      "minute": 0
+    }
+  ]
+}
+
